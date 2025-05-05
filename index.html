@@ -1,0 +1,135 @@
+<head>
+    <meta charset="utf-8" />
+    <title>responsive redesign portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+    <body>
+        <h1>A Fresh Look For the New York <br>Department of Building's Search Site</h1>
+        <h2>Redesigning for simplicity, usability, and accessibility for public good</h2>
+        <div id="blue-square">
+            <img src="./nyc_dob_before.png" style="width:500px;height:500px;">
+            <img src="./final_ss.png" style="width:500px;height:500px;">
+        </div>
+        <div id="initial-eval">
+            <div class="center-paragraph">
+                <p class="mt-4" style="width:50vw;margin-left:auto;margin-right:auto;font-size:2.5vh">Last year, I learned through a grassroots collective of Asian migrant workers about how they used the New York Department of Buildings Search site in order to find out if their workplaces had tickets from the city. However, workers described the website as difficult to use, preventing them from accessing the information.</p>
+                <h3 id="question">What could a redesigned website that improved accessibility and usability look like?</h3>
+            </div>
+            <p class="header" style="margin-top:10vh">INITIAL EVALUATION</p>
+            <p id="init-eval-p" style="font-size:1.3rem">The website had some design benefits but largely presented significant usability issues.</p>
+    
+            <div class="row">
+                <div class="eval-text col">
+                    <ul>
+                        <li>The one strong benefit was that the site was <b> fairly efficient</b>—once users knew how to navigate the page, users input all information on one page</li>
+                        <ul>
+                            <li>Related searches grouped together</li>
+                            <li>Poor hierarchy may slow users down, see below</li>
+                        </ul>
+                        <li>However, it was <b>difficult to learn</b> to use the first time</li>
+                        <ul>
+                            <li><b>Little hierarchy</b>: Small titles and similar sizing for subtitles and text</li>
+                            <li>No instructions or guidance for first-time users</li>
+                            <li>Unclear where user should start navigating the page, how much info to enter</li>
+                            <li>++: Dropdowns, buttons, and links did provide visual affordances so users know where to look</li>
+                            <ul>
+                                <li>Link references followed standard blue and underline format</li>
+                                <li>Buttons had background color and borders</li>
+                            </ul>
+                        </ul>
+                        <li>It is also <b>difficult to remember</b> how to navigate the page once the user has already visited it</li>
+                        <ul>
+                            <li>Few visual cues for users to rely on</li>
+                        </ul>
+                      </ul>
+                </div>
+                <div class="col">
+                    <img src="./nyc_dob_before.png" style="width:500px;height:500px;">
+                </div>
+            </div>
+       
+
+            <p id="accessibility-text">The site also had significant accessibility issues. I used the WebAIM WAVE Tool to provide a summary of site accessibility.</p>
+            <div class="row" id="accessibility">
+                <div class="col">
+                    <img src="./wave.png" style="width:450px;height:550px;">
+                </div>
+                <div class="eval-text col">
+                    <ul>
+                        <li>The site is <b>largely unnavigable</b> with a screenreader</li>
+                        <ul>
+                        <li>Most errors from WAVE associated with lack of adequate form labels and alternative text for the dropdown menus and input form boxes</li>
+                        <li>Many alerts around use of HTML layout tables &rarr; Introduce reading and navigation order issues for screenreaders</li>
+                        </ul>
+                        <li>Users might also benefit from larger text</li>
+                        </ul>
+
+                        <h3>What do these usability and accessibility issues mean for user experience?</h3>
+                        <ul>
+                            <li>Visually impaired users using screenreaders cannot use this site and perform the searches they want</li>
+                            <li>Other users may be intimidated by the site, and not know where to begin</li>
+                            <li>Users may be frustrated with or discouraged by the site, not obtaining the info they seek </li>
+                            <ul>
+                                <li> <b>Consistent with feedback from massage workers.</b></li>
+                            </ul>
+                        </ul>
+                </div>
+                
+            </div>
+        </div> 
+            
+        <div id="mockup">  
+            <p class="header" style="margin-top:10vh">MOCKUP DESIGN</p>
+            <p style="font-size:2.5vh">I began by creating a style guide consistent with the City of New York's government sites' color palette and fonts.</p>
+            <img src="./style_guide.png" style="width:650px;height:550px;">
+            <p class="mt-4" style="width:50vw;margin-left:auto;margin-right:auto;margin-top:5vh;font-size:2.5vh">From there, I created three high-fidelity wireframes for three-different screen sizes: a large desktop, a tablet, and a phone. 
+                In this redesign, I aimed to keep the simplicity of NYC websites and reduce complexity by hiding additional functions behind specific user paths distinguished by buttons.
+            </p>
+        </div>
+    </div>
+    
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="./laptop_view.png" style="width:85vw;height:auto;">
+            </div>
+          
+            <div class="mySlides">
+              <img src="./mobile_view.png" style="width:85vw;height:auto;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        <p class="header" style="margin-top:10vh">MOCKUP IMPLEMENTATION & REFLECTION</p>
+        <div class="left-window">
+            <div class="text-container" id="style-guide-text">
+                <p style="font-size:2.5vh">I've implemented the <a href="https://ssompal1.github.io/redesign/">home page</a> of the website in order to implement the mockups. The redesigned page offers several key impovements: </p>
+                <ul>
+                    <li>Usability</li>
+                    <ul>
+                        <li><b>Improved hierarchy of text and visual cues:</b>Titles are clear and buttons augmented by icons direct users attention to potential types of searches</li>
+                        <li><b>Highlight instructions for users:</b> Menu bar items for FAQ and Glossary are made larger and higher up for users to seek guidance</li>
+                        <li><b>Clear user paths hide unnecessary complexity:</b>Hiding search behind buttons reduces text density on page </li>
+                    </ul>
+                    <li>Accessibility</li>
+                    <ul><li><b>Eliminate HTML layout tables</b></li>
+                        <li><b>Increased text size</b></li>
+                        <li><b>Reducing text density</b> improves initial screen navigation on screen reader</li>
+                        <li><b>Improved hierarchy</b> with proper navigation labels and alternative text</li>
+                    </ul>
+                    <br>
+                <p style="font-size:2.5vh">These changes ultimately improve user experience by making the interface less overwhelming and clearly indicating possible interaction paths and additional guidance for users.</p>
+                </ul>
+        </div>
+            <div class="problem-image-container">
+                <img src="./final_ss.png" style="width:650px;height:550px;">
+                <p id="conclusion" >For websites intended for public service information sharing, designing with usability and accesibility in mind is especially important. I learned that maintaining simplicity and creating clear visual cues provided an effective way to redesign this website. </p>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>

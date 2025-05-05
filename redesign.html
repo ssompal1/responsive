@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC DOB Redesign</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dob_styles.css">
+</head>
+<body>
+  <header class="dob-header">
+    <h1>Redesigning the NYC DOB Search Site</h1>
+    <p>Improving simplicity, usability, and accessibility for community use</p>
+  </header>
+
+  <section class="section section-light">
+    <h2>Background</h2>
+    <p>Last year, I learned from a grassroots collective of Asian migrant workers that they used the NYC DOB Search site to check if their workplaces had city violations. While somewhat efficient, the site had severe usability and accessibility shortcomings.</p>
+    <img src="./nyc_dob_before.png" alt="Original NYC DOB Site Screenshot">
+  </section>
+
+  <section class="section section-dark">
+    <h2>Usability Issues</h2>
+    <ul>
+      <li><strong>Efficient but hard to learn:</strong> All inputs were on one page, but lack of guidance made first-time use difficult.</li>
+      <li><strong>Poor hierarchy:</strong> Small titles and same-sized text confused navigation.</li>
+      <li><strong>Low memorability:</strong> Few visual cues helped repeat users remember steps.</li>
+    </ul>
+    <img src="./nyc_dob_before.png" alt="Site Hierarchy Issues">
+  </section>
+
+  <section class="section section-light">
+    <h2>Accessibility Audit</h2>
+    <p>I used the WebAIM WAVE tool to evaluate the site. Major findings included lack of alt text, missing form labels, and poor screenreader navigation due to layout tables.</p>
+    <img src="./wave.png" alt="WAVE Accessibility Report">
+  </section>
+
+  <section class="section section-dark">
+    <h2>User Impact</h2>
+    <ul>
+      <li>Screenreader users couldn't complete searches.</li>
+      <li>New users were intimidated by unclear design.</li>
+      <li>Massage workers reported difficulty accessing needed information.</li>
+    </ul>
+  </section>
+
+  <section class="section section-light">
+    <h2>Style Guide</h2>
+    <p>To guide my redesign, I built a style guide inspired by NYC’s official branding.</p>
+    <img src="./style_guide.png" alt="Style Guide">
+  </section>
+
+  <section class="section section-dark">
+    <h2>High Fidelity Wireframes</h2>
+    <p>I created wireframes for laptop, tablet, and mobile views to ensure responsive design.</p>
+    <img src="./laptop_view.png" alt="Laptop Wireframe">
+    <div class="image-caption">Laptop view</div>
+    <div class="d-flex justify-content-between mt-4">
+      <div>
+        <img src="./laptop_view.png" alt="Tablet Wireframe" style="width: 250px;">
+        <div class="image-caption">Tablet view</div>
+      </div>
+      <div>
+        <img src="./laptop_view.png" alt="Mobile Wireframe" style="width: 250px;">
+        <div class="image-caption">Mobile view</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NYC DOB Redesign Project</p>
+  </footer>
+</body>
+</html>

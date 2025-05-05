@@ -1,0 +1,261 @@
+
+body {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #deeefb;
+    font-family: 'Source Serif 4', serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: bold;
+    color: #2a4d6a;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+
+h2 {
+    font-size: 3.5vh;
+    font-weight: normal;
+    margin-bottom: 4vh;
+}
+
+h3 {
+    font-size: 2.5vh;
+    font-weight: normal;
+    color: #0d4984;
+    margin: 4vh 0 2vh;
+}
+
+p {
+    font-size: 2.2vh;
+    margin-bottom: 2vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+}
+
+#blue-square {
+    background-color: #6bbcff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6vh 4vw;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 8px;
+}
+
+.left-window{
+    display:flex;
+}
+
+.center-window{
+    display:flex;
+    justify-content: center;
+    margin:8vh 0;
+}
+
+.right-window{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.left-window ul, .right-window h3, .right-window ul{
+    width:40vw;
+}
+
+.left-window li, .right-window li{
+    font-family: 'Source Serif 4';
+    font-size: 1.3rem;
+}
+
+.left-paragraph{
+    justify-content: center;
+    align-items: center;
+    width:60vw;
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+
+.left-paragraph p {
+    font-family: 'Source Serif 4';
+    font-weight: normal;
+    font-size: 2.5vh;
+    line-height:110%;
+    text-align:start;
+    margin-bottom:10vh;
+}
+
+.center-paragraph{
+    margin-top: 8vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.problem-image-container {
+    border-radius:12px;
+}
+
+.design-image-container {
+    padding:1vw;
+    border-radius:12px;
+}
+
+#style-guide-text {
+    text-align: left;
+    flex: 1 1 10vw;
+    margin-right:3vw;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    margin: 6vh auto;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+    border-radius: 4px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+#conclusion{
+    margin-top:5vh;
+    color:#0d4984;
+    font-weight:bold;
+    font-size:2.5vh;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90vw;
+    }
+
+    .left-window, .right-window {
+        flex-direction: column;
+    }
+
+    .left-window ul, .right-window ul, .right-window h3 {
+        width: 100%;
+    }
+
+    #blue-square {
+        flex-direction: column;
+        margin: 0;
+        padding: 4vh 2vw;
+    }
+
+    .problem-image-container, .design-image-container {
+        width: 100%;
+    }
+}
+
+.eval-text{
+    font-size: 20px;
+   
+}
+
+#init-eval-p {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.header {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #0d4984;
+    margin: 4vh 0 2vh;
+}
+
+#accessibility-text{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size:1.3rem;
+    width:50vw;
+    margin-right:auto;
+    
+}
+#accessibility {
+  margin-top: 20px;
+}
+
+#question{
+    margin-top:10vh;
+    font-weight: normal;
+    font-size: 30px;
+}
+#question:hover{
+    font-weight: bold;
+}
